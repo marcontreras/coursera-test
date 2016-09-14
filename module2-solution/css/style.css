@@ -1,0 +1,107 @@
+/* Base style */
+* {
+	box-sizing: border-box;
+	font-family: Helvetica;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#box {
+	margin: 5%;
+	width: 90%;
+}
+
+h1 {
+	font-size: 1.75em;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.25em;
+	text-align: center;
+	width: 33%;
+	background-color: red;
+	border: 1px solid black;
+}
+
+section {
+	background-color: #ccffcc;
+	border: 1px solid black;
+}
+
+div#container {
+	background-color: #00FFFF;
+	position: relative;
+	top: 66%; 
+}
+
+#sect1 {
+	background-color: pink;
+	position: relative;
+	top: 100%;
+	left: 67%;
+}
+
+#sect2 {
+	background-color: maroon;
+	color: white;
+	position: relative;
+	top: 100%;
+	left: 67%;
+}
+
+#sect3 {
+	background-color: yellow;
+	position: relative;
+	top: 100%;
+	left: 67%;
+}
+
+
+/* Sinmple Responsive Framework */
+
+.row {
+	width: 100%;
+}
+
+/* Medium devices only */
+@media (min-width: 992px) {
+	.col-md-4 {
+		float: left;
+		margin-left: 2%;
+	}
+	.col-md-4 {
+		width: 30.66%;
+	}
+}
+
+/* Small devices only */
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-sm-6, .col-sm-12 {
+		float: left;
+		margin-left: 5%;
+		margin-bottom: 4%;
+	}
+	.col-sm-6 {
+		width: 42.5%;
+	}
+	.col-sm-12 {
+		width: 90%;
+	}
+}
+
+/* XS devices only */
+@media (max-width: 767px) { 
+	.col-xs-6, .col-xs-12 {
+		float: left;
+		margin-bottom: 4%;
+		margin-left: 5%;
+	}
+	.col-xs-12 {
+		width: 90%;
+	}
+}
+
