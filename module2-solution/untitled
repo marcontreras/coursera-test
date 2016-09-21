@@ -1,0 +1,13 @@
+
+unsigned int mystery(unsigned int x, unsigned int y) {
+	if( 0 == y )
+		return x;
+	else
+		mystery( y, x % y );
+}
+
+int main( void ) {
+	printf(" %d\n", gdc( 3, 9 ) );
+	
+	return 0;
+}

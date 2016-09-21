@@ -24,7 +24,8 @@ h2 {
 	text-align: center;
 	width: 33%;
 	background-color: red;
-	border: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 section {
