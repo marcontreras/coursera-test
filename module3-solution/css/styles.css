@@ -1,0 +1,145 @@
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: #FFF;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* HEADER */
+#header-nav {
+	background-color: #57BC90;
+	border-radius: 0;
+	border: 0;
+}
+
+.navbar-brand {
+	padding-top: 15px;
+}
+	
+.navbar-brand h1 {	/* Restaurant name */
+	font-family: 'Lora', serif;
+	color: #FFF;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;  
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #FFF;		/* Color of the text and icons*/
+	text-align: center;
+}
+#nav-list a:hover {		/* Color of the list of icons */
+	background: #77C9D4;
+}
+#nav-list a span {
+	font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle:hover, .navbar-header button.navbar-toggle:focus {
+	background: #77C9D4;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 2.0px solid #FFF;
+}
+
+.navbar-header button.navbar-toggle { 
+	clear: both;
+	margin-top: -65px;
+}
+/* END HEADER */
+
+
+/* HOME PAGE */
+
+#chicken-tile, #beef-tile, #sushi-tile {
+	height: 1000px;
+	background: #77C9D4;
+	width: 100%;
+	margin-bottom: 50px;
+	position: relative;
+	overflow: auto;
+}
+
+#chicken-tile div, #beef-tile div, #sushi-tile div {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	top: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	color: black;
+}
+
+#chicken-tile p, #beef-tile p, #sushi-tile p {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.title {
+	color: #000;
+	text-align: center;
+	font-size: 2.0em;
+	margin-bottom: 30px;
+}
+
+
+#home-tiles {
+	height: 1000px;
+	width: 100%;
+	color: #000;
+	margin-bottom: 100px;
+	position: relative;
+	background-color: #7EC0EE;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+}
+
+
+/* END HOME PAGE */
+
+
+/* Medium devices only */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Small devices only */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Extra small devices only */
+@media (max-width: 767px) {
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px; 
+	}
+	.navbar-brand h1 {
+		padding-top: 10px;
+		font-size: 5vw; /* 1vw = 1% viewport width */
+	}	
+	#collapsable-nav a { /* Collapsed nav menu glyph */
+		font-size: 1.2em;
+	}
+	#collapsable-nav a span { 
+		font-size: 1em;
+		margin-right: 5px; 
+	}
+
+	#chicken-tile, #beef-tile, #sushi-tile {
+		width: 360px;
+		margin: 0 auto 15px;
+	}
+
+}
