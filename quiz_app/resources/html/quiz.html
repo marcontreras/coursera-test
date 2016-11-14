@@ -1,0 +1,65 @@
+<div class="row lv_row" ng-controller="QuizController as Quiz">
+  <br>
+  <br>
+  <div ng-hide="app_error.state" class="container lv_main_container">
+    <div class="text-center lv_title_quiz">
+      <b>{{quiz.title}}</b>
+    </div>
+    <div class="jumbotron lv_main_jumbotron">
+      <div class="row lv_row">
+        <i id="instruction">{{current_question.instruction}}</i>
+      </div>
+      <br>
+      <div class="row lv_row lv_question_text">
+        <div class="text-center" bind-html-compile="current_question.text"></div>
+      </div>
+
+      <div class="row lv_row">
+        <div bind-html-compile="current_question.options"></div>
+      </div>
+
+      <div class="row lv_row hidden-xs" ng-show="visualizer.state">
+        <div id="lv_zoom_visualizer" class="col-xs-offset-3 col-xs-6" ng-style="visualizer.style"></div>
+      </div>
+
+    </div>
+
+    <div class="text-center">
+      <nav aria-label="Page navigation" style="margin: 0px;">
+        <ul class="pagination pagination-lg lv_quiz_pagination">
+          <li ng-class="{disabled : hide_pbefore}" class="lv_pag_elements" ng-click="ChangeCurrentQuestion(current_question.number-1);">
+            <a href="" aria-label="Previous">
+              <span class="lv_lpcontrols" aria-hidden="true">&laquo;Anterior</span>
+              <span class="lv_mpcontrols" aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+
+          <li class="lv_smpcontrols" ng-hide="hide_pbefore"><a href="">...</a></li>
+
+          <li class="lv_maxpcontrols lv_pag_elements" ng-hide="hide_maxpbefore"><a href="">...</a></li>
+
+          <li ng-repeat="page in quiz.question" id="page_{{$index}}" ng-class="{active : 0==$index, lv_pag_elements : $index<10}" class="link_pages"><a href="" ng-click="ChangeCurrentQuestion($index);">{{$index+1}}</a></li>
+
+          <li class="lv_smpcontrols" ng-hide="hide_pafter"><a href="">...</a></li>
+
+          <li class="lv_maxpcontrols lv_pag_elements" ng-hide="hide_maxpafter"><a href="">...</a></li>
+
+          <li ng-class="{disabled : hide_pafter}" class="lv_pag_elements" ng-click="ChangeCurrentQuestion(current_question.number+1);">
+            <a href="" aria-label="Next">
+              <span class="lv_lpcontrols" aria-hidden="true">Siguiente&raquo;</span>
+              <span class="lv_mpcontrols" aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="row lv_row" style="border-top: 2px solid #999999; padding-top:4px;">
+      <button class="btn btn-warning btn-md btn-block active lv_btn_check_answers" ng-click="SubmitAnswers();"><b>EVALUAR</b></button>
+    </div>
+
+  </div>
+  <div ng-show="app_error.state" class="container lv_main_container text-center">
+    <h4><i class="lv_empty_answer">{{app_error.message}}</i></h4>
+  </div>
+</div>

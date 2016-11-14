@@ -1,0 +1,51 @@
+<div class="row lv_row" ng-controller="QuizResultsController as Results">
+  <br>
+  <br>
+  <div class="container lv_main_container">
+    <div class="text-center lv_title_quiz">
+      <b>RESULTADO DE LA EVALUACIÓN</b>
+    </div>
+    <div class="jumbotron lv_main_jumbotron">
+      <div class="lv_text_results text-center">
+        RESPUESTAS CORRECTAS: {{number_correct_answers}} / {{number_questions}}
+      </div>
+      <br>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="lv_heading_results">
+          <h4 class="panel-title">
+            <button class="btn btn-md btn-block" type="button" data-toggle="collapse" data-target="#lv_collapse_results" aria-expanded="false" aria-controls="lv_collapse_results" style="white-space: normal !important;">
+              <b>{{title_accordion}}</b>
+            </button>
+          </h4>
+        </div>
+        <div id="lv_collapse_results" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lv_heading_results">
+          <div class="panel-body">
+            <div id="lv_table_wrap" class="table-responsive" style="max-height: 250px; overflow: scroll;">
+              <table class="table table-bordered table-striped table-condensed lv_results_table">
+                <thead>
+                  <tr>
+                    <th class="text-center">PREGUNTA</th>
+                    <th colspan="2" class="text-center">RESPUESTA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="q in quiz.question">
+                    <td class="text-justify" style="vertical-align: middle;" bind-html-compile="q.html_text_result"></td>
+                    <td class="text-justify" style="vertical-align: middle;" bind-html-compile="q.html_text_options_result"></td>
+                    <td class="text-center" style="vertical-align: middle; padding: 0px; margin: 0px;" ng-class="{lv_correct_answer: true=={{q.is_correct_answer}}, lv_wrong_answer: false=={{q.is_correct_answer}}}">
+                        <span ng-show="q.is_correct_answer" class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+                        <span ng-show="!q.is_correct_answer" class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row lv_row" style="border-top: 2px solid #999999; padding-top:4px;">
+      <button class="btn btn-md btn-block active lv_btn_try_again" style="white-space: normal !important;" ng-click="TryAgain();"><b>REALIZAR DE NUEVO</b></button>
+    </div>
+  </div>
+</div>

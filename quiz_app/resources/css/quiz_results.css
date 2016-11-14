@@ -1,0 +1,30 @@
+.lv_btn_try_again,.lv_btn_try_again:hover{
+  margin-bottom: 10px;
+  background-color: #00205b !important;
+  color:#FFF;
+}
+
+.lv_text_results{
+  color: #034a9e;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.lv_results_table>thead{
+  background-color: #eeeeee;
+  color: black;
+}
+
+.lv_correct_answer{
+  color: #4F8A10;
+  font-size: 27px;
+}
+
+.lv_wrong_answer{
+  color: #D8000C;
+  font-size: 27px;
+}
+
+#lv_collapse_results > div{
+  background-color: #f5f5f5;
+}

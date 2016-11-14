@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html ng-app="quiz">
+<head>
+  <title>CUESTIONARIO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- angular, jquery, bootstrap-->
+  <script type="text/javascript" src="resources/libs/angular-1.5.8/angular.min.js"></script>
+  <script type="text/javascript" src="resources/libs/angular-1.5.8/angular-route.min.js"></script>
+  <script type="text/javascript" src="resources/libs/angular-bind-html-compile.min.js"></script>
+
+  <script type="text/javascript" src="resources/libs/xml2json.min.js"></script>
+
+  <script src="resources/libs/jquery-3.1.0/jquery-3.1.0.min.js"></script>
+
+  <link rel="stylesheet" href="resources/libs/bootstrap-3.3.7/css/bootstrap.min.css">
+  <script src="resources/libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- js-->
+  <script src="resources/js/app.js"></script>
+  <script src="resources/js/quiz_controller.js"></script>
+  <script src="resources/js/quiz_results_controller.js"></script>
+
+  <!-- styles-->
+  <link rel="stylesheet" href="resources/css/quiz.css">
+  <link rel="stylesheet" href="resources/css/quiz_results.css">
+
+</head>
+
+<body>
+
+  <div ng-include="current_template"></div>
+
+</body>
+
+</html>

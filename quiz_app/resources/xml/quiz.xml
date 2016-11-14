@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<quiz>
+		<title>TÍTULO DEL CUESTIONARIO</title>
+		<random_mode>1</random_mode>
+		<questions_to_show>10</questions_to_show>
+		<questions>
+			<question>
+				<type>RadioButton</type>
+				<instruction>Selecciona la respuesta correcta.</instruction>
+				<text>¿Sed quis nisl eu mi pharetra ullamcorper in porta ligula 1?</text>
+				<options>
+					<option>Correcta 1</option>
+					<option>Nunc 2</option>
+					<option>Sed 3</option>
+					<option>Risus 4</option>
+				</options>
+				<correct_answer>Correcta 1</correct_answer>
+			</question>
+			<question>
+				<type>CheckBox</type>
+				<instruction>Selecciona las respuestas correctas.</instruction>
+				<text>¿Ut scelerisque, elit at ornare dapibus, erat risus suscipit erat 2?</text>
+				<options>
+					<option>
+						<text>Correcta 1</text>
+						<truth>1</truth>
+					</option>
+					<option>
+						<text>Phasellus 2</text>
+						<truth>0</truth>
+					</option>
+					<option>
+						<text>Scelerisque 3</text>
+						<truth>0</truth>
+					</option>
+					<option>
+						<text>Correcta 4</text>
+						<truth>1</truth>
+					</option>
+				</options>
+			</question>
+			<question>
+				<type>DropDownList</type>
+				<instruction>Selecciona la palabra correcta.</instruction>
+				<text>_ dictum, purus vel ultricies rutrum, arcu libero congue lacus. 3</text>
+				<options>
+					<option>Correcta 1</option>
+					<option>Lorem 2</option>
+					<option>Commodo 3</option>
+					<option>Interdum 4</option>
+				</options>
+				<correct_answer>Correcta 1</correct_answer>
+			</question>
+			<question>
+				<type>ImageCheckBox</type>
+				<instruction>Selecciona las imágenes correctas.</instruction>
+				<text>¿Curabitur neque mauris, varius sed congue quis 4?</text>
+				<options>
+					<option>
+						<src>resources/imgs/1.jpg</src>
+						<truth>1</truth>
+					</option>
+					<option>
+						<src>resources/imgs/2.jpg</src>
+						<truth>1</truth>
+					</option>
+					<option>
+						<src>resources/imgs/3.jpg</src>
+						<truth>0</truth>
+					</option>
+					<option>
+						<src>resources/imgs/4.jpg</src>
+						<truth>0</truth>
+					</option>
+				</options>
+			</question>
+			<question>
+				<type>ImageRadioButton</type>
+				<instruction>Selecciona la imagen correcta.</instruction>
+				<text>¿Maecenas auctor imperdiet neque sit amet laoreet 5?</text>
+				<options>
+					<option>
+						<src>resources/imgs/1.jpg</src>
+					</option>
+					<option>
+						<src>resources/imgs/2.jpg</src>
+					</option>
+					<option>
+						<src>resources/imgs/3.jpg</src>
+					</option>
+					<option>
+						<src>resources/imgs/4.jpg</src>
+					</option>
+				</options>
+				<correct_answer>resources/imgs/1.jpg</correct_answer>
+			</question>
+			<question>
+				<type>RadioButton</type>
+				<instruction>Selecciona la respuesta correcta.</instruction>
+				<text>¿Sapien sed ut quis leo porttitor luctus sed a tortor 6?</text>
+				<options>
+					<option>Correcta 1</option>
+					<option>Nunc 2</option>
+					<option>Sed 3</option>
+					<option>Risus 4</option>
+				</options>
+				<correct_answer>Correcta 1</correct_answer>
+			</question>
+			<question>
+				<type>DropDownList</type>
+				<instruction>Selecciona la palabra correcta.</instruction>
+				<text>Vivamus _ consectetur diam, sed. 7</text>
+				<options>
+					<option>correcta 1</option>
+					<option>vel 2</option>
+					<option>habitasse 3</option>
+					<option>platea 4</option>
+				</options>
+				<correct_answer>correcta 1</correct_answer>
+			</question>
+			<question>
+				<type>DropDownList</type>
+				<instruction>Selecciona la palabra correcta.</instruction>
+				<text>Nulla dignissim vehicula dolor, vel blandit _. 8</text>
+				<options>
+					<option>correcta 1</option>
+					<option>lorem 2</option>
+					<option>commodo 3</option>
+					<option>interdum 4</option>
+				</options>
+				<correct_answer>correcta 1</correct_answer>
+			</question>
+			<question>
+				<type>RadioButton</type>
+				<instruction>Selecciona la respuesta correcta.</instruction>
+				<text>¿Sit quisque suscipit semper nec eu mauris amet dolor id diam 9?</text>
+				<options>
+					<option>Correcta 1</option>
+					<option>Nunc 2</option>
+					<option>Sed 3</option>
+					<option>Risus 4</option>
+				</options>
+				<correct_answer>Correcta 1</correct_answer>
+			</question>
+			<question>
+				<type>RadioButton</type>
+				<instruction>Selecciona la respuesta correcta.</instruction>
+				<text>¿Id diam quisque sit amet dolor id diam suscipit semper nec eu mauris 10?</text>
+				<options>
+					<option>Correcta 1</option>
+					<option>Nunc 2</option>
+					<option>Sed 3</option>
+					<option>Risus 4</option>
+				</options>
+				<correct_answer>Correcta 1</correct_answer>
+			</question>
+			<question>
+				<type>CheckBox</type>
+				<instruction>Selecciona las respuestas correctas.</instruction>
+				<text>¿Fusce sed ante porta arcu venenatis viverra vel eget dui 11?</text>
+				<options>
+					<option>
+						<text>Phasellus 1</text>
+						<truth>0</truth>
+					</option>
+					<option>
+						<text>Correcta 2</text>
+						<truth>1</truth>
+					</option>
+					<option>
+						<text>Scelerisque 3</text>
+						<truth>0</truth>
+					</option>
+					<option>
+						<text>Correcta 4</text>
+						<truth>1</truth>
+					</option>
+				</options>
+			</question>
+			<question>
+				<type>DropDownList</type>
+				<instruction>Selecciona la palabra correcta.</instruction>
+				<text>Arcu _ eget platea, phasellus. 12</text>
+				<options>
+					<option>correcta 1</option>
+					<option>vel 2</option>
+					<option>habitasse 3</option>
+					<option>platea 4</option>
+				</options>
+				<correct_answer>correcta 1</correct_answer>
+			</question>
+			<question>
+				<type>ImageCheckBox</type>
+				<instruction>Selecciona las imágenes correctas.</instruction>
+				<text>¿Aenean auctor dui quam, eget viverra nisl posuere ut 13?</text>
+				<options>
+					<option>
+						<src>resources/imgs/1.jpg</src>
+						<truth>0</truth>
+					</option>
+					<option>
+						<src>resources/imgs/2.jpg</src>
+						<truth>0</truth>
+					</option>
+					<option>
+						<src>resources/imgs/3.jpg</src>
+						<truth>1</truth>
+					</option>
+					<option>
+						<src>resources/imgs/4.jpg</src>
+						<truth>1</truth>
+					</option>
+				</options>
+			</question>
+			<question>
+				<type>ImageRadioButton</type>
+				<instruction>Selecciona la imagen correcta.</instruction>
+				<text>¿Donec in tellus id risus tincidunt iaculis. Aliquam eget congue nulla 14?</text>
+				<options>
+					<option>
+						<src>resources/imgs/1.jpg</src>
+					</option>
+					<option>
+						<src>resources/imgs/2.jpg</src>
+					</option>
+					<option>
+						<src>resources/imgs/3.jpg</src>
+					</option>
+					<option>
+						<src>resources/imgs/4.jpg</src>
+					</option>
+				</options>
+				<correct_answer>resources/imgs/3.jpg</correct_answer>
+			</question>
+		</questions>
+	</quiz>

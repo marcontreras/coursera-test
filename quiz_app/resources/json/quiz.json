@@ -1,0 +1,232 @@
+{
+  "quiz": {
+    "title": "TÍTULO DEL CUESTIONARIO",
+    "random_mode": 1,
+    "questions_to_show": 10,
+
+    "questions":{
+      "question": [
+        {
+          "type": "RadioButton",
+          "instruction": "Selecciona la respuesta correcta.",
+          "text": "¿Sed quis nisl eu mi pharetra ullamcorper in porta ligula 1?",
+          "options":
+          {
+            "option":
+            [
+              "Correcta 1",
+              "Nunc 2",
+              "Sed 3",
+              "Risus 4"
+            ]
+          },
+          "correct_answer":"Correcta 1"
+        },
+        {
+          "type": "CheckBox",
+          "instruction": "Selecciona las respuestas correctas.",
+          "text": "¿Ut scelerisque, elit at ornare dapibus, erat risus suscipit erat 2?",
+          "options":
+          {
+            "option":
+            [
+              {"text":"Correcta 1", "truth":1},
+              {"text":"Phasellus 2", "truth":0},
+              {"text":"Scelerisque 3", "truth":0},
+              {"text":"Correcta 4", "truth":1}
+            ]
+          }
+        },
+        {
+          "type":"DropDownList",
+          "instruction":"Selecciona la palabra correcta.",
+          "text":"_ dictum, purus vel ultricies rutrum, arcu libero congue lacus. 3",
+          "options":
+          {
+            "option":
+            [
+              "Correcta 1",
+              "Lorem 2",
+              "Commodo 3",
+              "Interdum 4"
+            ]
+          },
+          "correct_answer":"Correcta 1"
+        },
+        {
+          "type": "ImageCheckBox",
+          "instruction": "Selecciona las imágenes correctas.",
+          "text": "¿Curabitur neque mauris, varius sed congue quis 4?",
+          "options":
+          {
+            "option":
+            [
+              {"src":"resources/imgs/1.jpg", "truth":1},
+              {"src":"resources/imgs/2.jpg", "truth":1},
+              {"src":"resources/imgs/3.jpg", "truth":0},
+              {"src":"resources/imgs/4.jpg", "truth":0}
+            ]
+          }
+        },
+        {
+          "type": "ImageRadioButton",
+          "instruction": "Selecciona la imagen correcta.",
+          "text": "¿Maecenas auctor imperdiet neque sit amet laoreet 5?",
+          "options":
+          {
+            "option":
+            [
+              {"src":"resources/imgs/1.jpg"},
+              {"src":"resources/imgs/2.jpg"},
+              {"src":"resources/imgs/3.jpg"},
+              {"src":"resources/imgs/4.jpg"}
+            ]
+          },
+          "correct_answer":"resources/imgs/1.jpg"
+        },
+        {
+          "type": "RadioButton",
+          "instruction": "Selecciona la respuesta correcta.",
+          "text": "¿Sapien sed ut quis leo porttitor luctus sed a tortor 6?",
+          "options":
+          {
+            "option":
+            [
+              "Correcta 1",
+              "Nunc 2",
+              "Sed 3",
+              "Risus 4"
+            ]
+          },
+          "correct_answer":"Correcta 1"
+        },
+        {
+          "type":"DropDownList",
+          "instruction":"Selecciona la palabra correcta.",
+          "text":"Vivamus _ consectetur diam, sed. 7",
+          "options":
+          {
+            "option":
+            [
+              "correcta 1",
+              "vel 2",
+              "habitasse 3",
+              "platea 4"
+            ]
+          },
+          "correct_answer":"correcta 1"
+        },
+        {
+          "type":"DropDownList",
+          "instruction":"Selecciona la palabra correcta.",
+          "text":"Nulla dignissim vehicula dolor, vel blandit _. 8",
+          "options":
+          {
+            "option":
+            [
+              "correcta 1",
+              "lorem 2",
+              "commodo 3",
+              "interdum 4"
+            ]
+          },
+          "correct_answer":"correcta 1"
+        },
+        {
+          "type": "RadioButton",
+          "instruction": "Selecciona la respuesta correcta.",
+          "text": "¿Sit quisque suscipit semper nec eu mauris amet dolor id diam 9?",
+          "options":
+          {
+            "option":
+            [
+              "Correcta 1",
+              "Nunc 2",
+              "Sed 3",
+              "Risus 4"
+            ]
+          },
+          "correct_answer":"Correcta 1"
+        },
+        {
+          "type": "RadioButton",
+          "instruction": "Selecciona la respuesta correcta.",
+          "text": "¿Id diam quisque sit amet dolor id diam suscipit semper nec eu mauris 10?",
+          "options":
+          {
+            "option":
+            [
+              "Correcta 1",
+              "Nunc 2",
+              "Sed 3",
+              "Risus 4"
+            ]
+          },
+          "correct_answer":"Correcta 1"
+        },
+        {
+          "type": "CheckBox",
+          "instruction": "Selecciona las respuestas correctas.",
+          "text": "¿Fusce sed ante porta arcu venenatis viverra vel eget dui 11?",
+          "options":
+          {
+            "option":
+            [
+              {"text":"Phasellus 1", "truth":0},
+              {"text":"Correcta 2", "truth":1},
+              {"text":"Scelerisque 3", "truth":0},
+              {"text":"Correcta 4", "truth":1}
+            ]
+          }
+        },
+        {
+          "type":"DropDownList",
+          "instruction":"Selecciona la palabra correcta.",
+          "text":"Arcu _ eget platea, phasellus. 12",
+          "options":
+          {
+            "option":
+            [
+              "correcta 1",
+              "vel 2",
+              "habitasse 3",
+              "platea 4"
+            ]
+          },
+          "correct_answer":"correcta 1"
+        },
+        {
+          "type": "ImageCheckBox",
+          "instruction": "Selecciona las imágenes correctas.",
+          "text": "¿Aenean auctor dui quam, eget viverra nisl posuere ut 13?",
+          "options":
+          {
+            "option":
+            [
+              {"src":"resources/imgs/1.jpg", "truth":0},
+              {"src":"resources/imgs/2.jpg", "truth":0},
+              {"src":"resources/imgs/3.jpg", "truth":1},
+              {"src":"resources/imgs/4.jpg", "truth":1}
+            ]
+          }
+        },
+        {
+          "type": "ImageRadioButton",
+          "instruction": "Selecciona la imagen correcta.",
+          "text": "¿Donec in tellus id risus tincidunt iaculis. Aliquam eget congue nulla 14?",
+          "options":
+          {
+            "option":
+            [
+              {"src":"resources/imgs/1.jpg"},
+              {"src":"resources/imgs/2.jpg"},
+              {"src":"resources/imgs/3.jpg"},
+              {"src":"resources/imgs/4.jpg"}
+            ]
+          },
+          "correct_answer":"resources/imgs/3.jpg"
+        }
+      ]
+    }
+  }
+}
